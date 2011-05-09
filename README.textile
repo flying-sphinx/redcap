@@ -1,0 +1,27 @@
+h1. Redcap
+
+Redcap was written because I need to track SSH remote forwards by their process id, and all I have is the port they're forwarding to. You can't pair the two together unless you have root access, though - and that's where Redcap comes in. You run Redcap as root, and then you can ask it to do the pairing for you.
+
+h2. Installation
+
+<pre><code>gem install redcap</code></pre>
+
+h2. Usage
+
+As a server:
+
+<pre><code>$ sudo redcap</code></pre>
+
+And in code, as a client:
+
+<pre><code>require 'rubygems'
+require 'redcap'
+Redcap.pid_for_port(10342) #=> 26151</code></pre>
+
+h2. Author
+
+"Pat Allan":http://freelancing-gods.com wrote this code in May 2011, but all the hard work for daemonising the process, logging, and a pid file was done in a gist by "James Healy":http://yob.id.au.
+
+h3. Licence
+
+Released under the MIT Licence. Fork, contribute, re-use, whatever.
