@@ -49,6 +49,10 @@ class Redcap::App
     exit 1
   end
   
+  def pid_file
+    @pid_file ||= '/var/tmp/redcap.pid'
+  end
+  
   private
   
   def update_procline
@@ -57,10 +61,6 @@ class Redcap::App
   
   def log_file
     @log_file ||= '/var/log/redcap.log'
-  end
-  
-  def pid_file
-    @log_file ||= '/var/tmp/redcap.pid'
   end
   
   def logger
