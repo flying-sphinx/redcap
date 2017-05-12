@@ -20,8 +20,7 @@ Gem::Specification.new do |s|
     File.basename(f)
   }
   s.require_paths = ['lib']
-  
-  s.add_runtime_dependency     'eventmachine', ['>= 0.12.10']
-  s.add_development_dependency 'rake',         ['0.8.7']
-  s.add_development_dependency 'rspec',        ['2.5.0']
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
 end

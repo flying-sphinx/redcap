@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require 'redcap'
+require 'redcap/server'
 
 Redcap::App.daemonise!
 Redcap::App.run

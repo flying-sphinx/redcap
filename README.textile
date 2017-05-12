@@ -8,7 +8,11 @@ h2. Installation
 
 h2. Usage
 
-As a server:
+As a server, you'll also want EventMachine installed:
+
+<pre><code>gem install eventmachine</code></pre>
+
+And then, the service must be run as root (so it can get all the requierd port and process information):
 
 <pre><code>$ sudo redcap</code></pre>
 
