@@ -12,8 +12,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{Translates SSH forward ports to process IDs}
   s.description = %q{A service that translates SSH forward ports to process IDs. Built for Flying Sphinx.}
 
-  s.rubyforge_project = 'redcap'
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f|
